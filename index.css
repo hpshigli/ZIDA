@@ -1,0 +1,203 @@
+/* *{
+    margin: 10px;
+} */
+body {
+  background-color: rgb(71, 41, 96);
+  margin: 30px;
+  color: aliceblue;
+  background-image: url('assets/windmill.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+
+}
+
+.head {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    text-shadow: 8px 5px 5px rgba(155, 102, 10, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+    font-size: 48px; /* You can adjust the size if needed */
+  
+}
+
+.contact-details {
+  border: 5px white solid;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.email-id {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.investment {
+  text-align: center;
+  padding-top: 4vw;
+}
+
+.block {
+  border: none; /* Remove the default border */
+  height: 10px; /* Set the height of the line */
+  background-color: #ff5733; /* Set the background color */
+  width: 30%; /* Adjust width if needed */
+  align-content: center;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  gap: 10px;
+}
+
+/* .image {
+  border-radius: 40px;
+  padding: 20px;
+  transition: 0.4s;
+  width: 320px;
+} */
+
+.images{
+    padding: 20px 0px;
+}
+
+.hr {
+    border: none;
+  height: 2px;
+  background-color: #ff5733;
+  width: 100%;
+}
+
+.bottom {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: #ff5733;
+}
+
+.box {
+    position: relative;
+    width: fit-content;
+    overflow: hidden; /* Ensure the image doesn't overflow when zoomed */
+    border-radius: 40px; /* Optional to maintain rounded corners on hover */
+  }
+  
+  .image {
+    display: block;
+    border-radius: 40px;
+    width: 320px;
+    transition: transform 0.4s ease; /* Smooth zoom effect */
+}
+
+/* .image:hover {
+  transform: scale(1.2);
+} */
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background overlay */
+    color: white;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.4s ease; /* Smooth fade-in */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 40px;
+  }
+  
+  .box:hover .image {
+    transform: scale(1.1); /* Zoom in on hover */
+  }
+  
+  .box:hover .overlay {
+    opacity: 1; /* Make the overlay visible on hover */
+  }
+  
+  button {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #e14f28;
+  }
+  
+  
+
+/* @media (max-width: 1500px){
+    .image-container{
+
+    }
+} */
+
+@media (max-width: 1400px) {
+    h1 {
+        text-shadow: 8px 4px 5px rgba(155, 102, 10, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+        font-size: 48px; /* You can adjust the size if needed */
+      }
+
+  .image {
+    width: 300px;
+  }
+
+  .image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 750px) {
+  .image-container {
+    grid-template-columns: 1fr;
+  }
+
+  .head {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  h1 {
+    text-shadow: 10px 5px 5px rgba(155, 102, 10, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+    font-size: 48px; /* You can adjust the size if needed */
+  }
+}
+
+@media(max-width:400px){
+    .image{
+        width: 250px;
+    }
+
+    .image-container{
+        gap: 10px;
+    }
+
+    .bottom{
+        font-size: 12px;
+    }
+}
