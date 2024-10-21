@@ -1,6 +1,4 @@
-/* *{
-    margin: 10px;
-} */
+
 body {
   background-color: #472960;
   margin: 5px 30px;
@@ -35,13 +33,12 @@ body::before {
 
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 58px; 
+    font-size: 55px; 
   
 }
 
 .contact-details {
-  border: 5px white solid;
-  padding: 10px 20px;
+
   border-radius: 20px;
 }
 
@@ -52,7 +49,7 @@ h1 {
 
 .investment {
   text-align: center;
-  padding-top: 4vw;
+  padding-top: 5px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -68,14 +65,10 @@ h1 {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
   gap: 10px;
+  padding-left: 50px;
+
 }
 
-/* .image {
-  border-radius: 40px;
-  padding: 20px;
-  transition: 0.4s;
-  width: 320px;
-} */
 
 .images{
     padding: 20px 0px;
@@ -99,7 +92,7 @@ h1 {
 }
 
 .bottom img{
-  width: 11%;
+  width: 10%;
 }
 
 .box {
@@ -112,7 +105,7 @@ h1 {
   .image {
     display: block;
     border-radius: 40px;
-    width: 320px;
+    width: 260px;
     transition: transform 0.4s ease; /* Smooth zoom effect */
 }
 
@@ -161,13 +154,7 @@ h1 {
     background-color: #e14f28;
   }
   
-  
 
-/* @media (max-width: 1500px){
-    .image-container{
-
-    }
-} */
 
 @media (max-width: 1400px) {
     h1 {
@@ -201,6 +188,13 @@ h1 {
     gap: 15px;
   }
 
+  .contact-details{
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 10px 30px;
+
+  }
+
 .bottom{
   gap: 5vw;
   font-size: 15px;
@@ -218,6 +212,14 @@ h1 {
 @media(max-width:400px){
     .image{
         width: 250px;
+    }
+
+
+    .contact-details{
+      border: 2px solid;
+      border-radius: 20px;
+      padding: 10px 20px;
+  
     }
 
     .image-container{
