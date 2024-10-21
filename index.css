@@ -2,15 +2,9 @@
     margin: 10px;
 } */
 body {
-  background-color: rgb(71, 41, 96);
+  background-color: #472960;
   margin: 30px;
   color: aliceblue;
-  background-image: url('assets/windmill.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: multiply;
-
 }
 
 .head {
