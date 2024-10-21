@@ -3,9 +3,29 @@
 } */
 body {
   background-color: #472960;
-  margin: 30px;
+  margin: 5px 30px;
   color: aliceblue;
+  position: relative;
+  z-index: 1;
 }
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('assets/windmil.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  opacity: 0.2; /* Adjust this value for the desired opacity */
+  z-index: -1;
+  pointer-events: none; /* Ensures that the background image doesn't block any clicks */
+}
+
 
 .head {
   display: flex;
@@ -15,9 +35,7 @@ body {
 
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-    text-shadow: 8px 5px 5px rgba(155, 102, 10, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
-    font-size: 48px; /* You can adjust the size if needed */
+    font-size: 58px; 
   
 }
 
@@ -35,6 +53,7 @@ h1 {
 .investment {
   text-align: center;
   padding-top: 4vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .block {
@@ -71,10 +90,16 @@ h1 {
 
 .bottom {
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+    gap: 10vw;
+    /* justify-content: center; */
+    /* align-items: center; */
     color: #ff5733;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.bottom img{
+  width: 11%;
 }
 
 .box {
@@ -146,7 +171,7 @@ h1 {
 
 @media (max-width: 1400px) {
     h1 {
-        text-shadow: 8px 4px 5px rgba(155, 102, 10, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+       
         font-size: 48px; /* You can adjust the size if needed */
       }
 
@@ -176,8 +201,16 @@ h1 {
     gap: 15px;
   }
 
+.bottom{
+  gap: 5vw;
+  font-size: 15px;
+}
+
+.bottom img{
+  width: 15%;
+}
+
   h1 {
-    text-shadow: 10px 5px 5px rgba(155, 102, 10, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
     font-size: 48px; /* You can adjust the size if needed */
   }
 }
@@ -189,6 +222,10 @@ h1 {
 
     .image-container{
         gap: 10px;
+    }
+
+    .bottom img{
+      width: 50px;
     }
 
     .bottom{
